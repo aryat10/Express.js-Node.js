@@ -17,7 +17,8 @@ app.get('/files',(request,response)=>{
 app.get('/jsoneg',(req,res)=>{
     res.json([
         {                               // this code snippet serves as an API endpoint using the Express.js framework in Node.js.
-            firstName: 'Hritik',            
+            firstName: 'Hritik', 
+            age: 35           
         },
         {     
             firstName: 'Aryat',              
