@@ -58,11 +58,11 @@ const updateBook = (req,res)=>{
 
 const delBook = (req,res)=>{
     const id = parseInt(req.params.id)
-    const index = book.findIndex(book => book.id === id)
-
+    const index = book.findIndex(book => book.id === id)                  
+                                                                            
     if(index !== -1){
-        const del = book[index]
-        book.slice(index,1)
+        const del = book[index] 
+        book.slice(index,1)                                              // This is the method of Delete operation in CRUD
         res.json(del)
     }
     else{
